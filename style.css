@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+}
+
+#play-field {
+  flex-grow: 1; /* Занимает оставшееся место */
+  border: 50px solid #553131; /* Белая граница вокруг игрового поля */
+  box-sizing: border-box; /* Чтобы граница не увеличивала размер элемента */
+}
+
+#game-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#gui {
+  width: 300px; /* Фиксированная ширина для GUI */
+  height: 100vh; /* Полная высота */
+  background: #0a7477;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box; /* Учитываем padding в размерах */
+}
+
+.gui-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-container {
+  margin-top: 75px;
+  display: flex;
+
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #395e61;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

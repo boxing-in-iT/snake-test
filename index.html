@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="play-field"></div>
+      <div id="gui">
+        <div class="gui-wrapper">
+          <h1>Snake Game</h1>
+          <p>Best Score: <span id="best-score">0</span></p>
+          <p>Current Score: <span id="current-score">0</span></p>
+          <h3>Modes</h3>
+          <form>
+            <input
+              type="radio"
+              id="classic"
+              name="mode"
+              value="classic"
+              checked
+            />
+            Classic<br />
+            <input type="radio" id="god-mode" name="mode" value="god" /> God
+            Mode<br />
+            <input type="radio" id="walls" name="mode" value="walls" />
+            Walls<br />
+            <input type="radio" id="portal" name="mode" value="portal" />
+            Portal<br />
+            <input type="radio" id="speed" name="mode" value="speed" />
+            Speed<br />
+          </form>
+          <div class="button-container">
+            <button id="play-button">Play</button>
+            <button id="exit-button">Exit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
+    <script src="./js/game.js"></script>
+  </body>
+</html>
